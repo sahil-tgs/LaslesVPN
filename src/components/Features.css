@@ -1,0 +1,73 @@
+.features {
+    padding: 80px 0;
+    background-color: #ffffff;
+  }
+  
+  .features-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .features-text {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .features-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .features-text p {
+    font-size: 1.1rem;
+    color: #707070;
+    margin-bottom: 20px;
+  }
+  
+  .features-text ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .features-text ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .features-text ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px; /* Adjust vertical positioning */
+    width: 20px; /* Adjust width of the custom bullet */
+    height: 20px; /* Adjust height of the custom bullet */
+    background-image: url('/public/bullet.svg'); /* URL of your custom vector image */
+    background-size: contain; /* Scale image to fit within the dimensions */
+    background-repeat: no-repeat; /* Prevent repeating */
+  }
+  
+  .features-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 200px;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .features-content {
+      flex-direction: column;
+    }
+  
+    .features-text,
+    .features-image {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

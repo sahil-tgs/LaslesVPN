@@ -1,0 +1,124 @@
+.testimonial-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-content {
+    display: flex;
+    width: var(--total-slides, 1) * 100%; /* Adjust total width */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 var(--per-slide, 15%); /* Adjust card width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 30px;
+    text-align: left;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .user-location {
+    color: #888;
+    font-size: 14px;
+  }
+
+  .testimonial-text {
+    font-style: italic;
+  }
+
+  .testimonial-card h3 {
+    margin-top: 0;
+  }
+  
+  .testimonial-card p {
+    margin-bottom: 0;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+  }
+  
+  .carousel-button:hover {
+    color: #555;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+  
+  .testimonial-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-caption {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .pagination-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pagination-dot.active {
+    background-color: #333;
+  }

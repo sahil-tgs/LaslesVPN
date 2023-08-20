@@ -1,0 +1,119 @@
+.price-plans {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .plans-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .plans-title h2 {
+    font-size: 2.5rem;
+  }
+  
+  .plans-title p {
+    font-size: 1.1rem;
+    color: #707070;
+    margin-top: 10px;
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .plan-card {
+    flex: 1;
+    max-width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 0 10px 20px; /* Add margin for spacing between cards */
+    transition: border-color 0.3s; /* Add transition for color change on hover */
+    border: 3px solid #dddddd; /* Set default border width */
+    border-color: #dddddd; /* Set default border color */
+  }
+  
+  .plan-card:hover {
+    border-color: #f53855; /* Change border color on hover */
+  }
+  
+  .plan-icon img {
+    width: 80px; /* Increase the icon width */
+    height: 80px; /* Increase the icon height */
+  }
+  
+  .plan-card h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .plan-card ul {
+    list-style-type: none;
+  padding: 10;
+  margin: auto; /* Center the ul within the card */
+  margin-top: 20px;
+  margin-bottom: 10px; /* Add margin after ul */
+  text-align: left; /* Align the text to the left */
+  }
+
+  
+.plan-card ul li {
+    position: relative;
+    padding-left: 30px; /* Add space for the custom bullet */
+  }
+  
+  .plan-card ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Set the width of the custom bullet */
+    height: 20px; /* Set the height of the custom bullet */
+    background-image: url("/public/bullet_2.svg"); /* Replace with the path to your bullet image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .bold-text {
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  
+  .outline-button {
+    width: 100%;
+    max-width: 180px;
+    border: 2px solid #f53855;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f53855;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .outline-button:hover {
+    background-color: #f53855;
+    color: #ffffff;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .plans-container {
+      flex-direction: column;
+    }
+  
+    .plan-card {
+      margin: 0 0 20px; /* Adjust margin for responsive layout */
+      max-width: 100%; /* Allow card to take full width on smaller screens */
+    }
+  }
+  

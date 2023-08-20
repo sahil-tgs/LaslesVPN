@@ -1,0 +1,40 @@
+.network-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .network-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .network-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .network-paragraph {
+    font-size: 1.1rem;
+    color: #707070;
+  }
+  
+  .network-image img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .Sponsored-image img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 40px;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .network-content {
+      padding: 0 20px;
+    }
+  }
+  

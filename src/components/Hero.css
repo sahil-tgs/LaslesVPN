@@ -1,0 +1,85 @@
+.hero {
+    background-color: #ffffff;
+    padding: 80px 0;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #707070;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    width: 250px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--primary, #f53855);
+  box-sizing: border-box;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  }
+
+  .hero-text button:hover {
+    background-color: #e63b4d; /* Slightly darker shade when hovered */
+    box-shadow: 0px 30px 50px 0px #ffaab7;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.hero-banner {
+    width: 100%;
+    max-width: 1140px; /* Set maximum width for the banner */
+    margin: 0 auto; /* Center the banner horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow below */
+  }
+  
+  .banner-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .icon-text p {
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+  }
+  
