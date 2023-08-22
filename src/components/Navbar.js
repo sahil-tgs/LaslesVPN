@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="Logo" />
-        <span>LaslesVPN</span>
+        <span>Lasles<b>VPN</b></span>
       </div>
       <div className="nav-links">
         <a href="#about">About</a>

@@ -1,24 +1,36 @@
 .hero {
     background-color: #ffffff;
-    padding: 80px 0;
+    padding: 1px 0;
   }
   
+
+  .Headign {
+    color: #0B132A !important ;
+    font-family: Rubik !important;
+    font-size: 50px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 70px !important; /* 140% */
+  }
+
+  .Parag{
+    font-size: 16px !important;
+    color: #4F5665;
+  }
   .hero-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 120px;
+    max-width: 1100px;
+    
   }
   
   .hero-text {
     flex: 1;
     text-align: left;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
   }
   
   .hero-text p {
@@ -47,39 +59,54 @@
   }
   
   .hero-image img {
-    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    max-width: 80%;
     height: auto;
   }
 
 .hero-banner {
-    width: 100%;
-    max-width: 1140px; /* Set maximum width for the banner */
-    margin: 0 auto; /* Center the banner horizontally */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    background: #ffffff;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1140px; /* Set the width */
+  height:200px; /* Set the height */
+  margin: 0 auto; /* Center the banner */
+  border-radius: 10px;
+  background: #FFF;
+  margin-top: 30px; /* Add some margin */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow below */
   }
   
   .banner-item {
     display: flex;
-    align-items: center;
+  align-items: center;
+  padding: 0 15px; /* Add padding to the banner items */
+  color: black;
+  flex-shrink: 0; /* Prevent icon overflow */
+  /* ... rest of your styles ... */
   }
   
   .banner-item img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    margin-left:  90px;
   }
   
+  .topText{
+    color: #0B132A;
+font-family: Rubik;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 5px; /* 120% */
+  }
+
   .icon-text p {
     font-size: 14px;
-    margin: 0;
+    margin-right: 90px;
     text-align: left;
   }
   
