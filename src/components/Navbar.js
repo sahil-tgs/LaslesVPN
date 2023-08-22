@@ -1,26 +1,29 @@
+// Navbar.js
 import React from 'react';
-import './Navbar.css'; // Import your CSS for styling
+import './Navbar.css'; // You can define your own styles in this CSS file
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="Logo" />
-        <span>Lasles<b>VPN</b></span>
+      <div className="navbar-left">
+        <img src="logo.svg" alt="Logo" className="logo" />
+        <span className="logo-text">Lasles<b>VPN</b></span>
       </div>
-      <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#price">Price</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#help">Help</a>
+      <div className="navbar-center">
+        <ul className="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
       </div>
-      <div className="auth-links">
-        <a href="#signin">Sign In</a>
-        <button>Sign Up</button>
+      <div className="navbar-right">
+        <a href="#signin" className="nav-link">Sign In</a>
+        <button className="signup-button">Sign Up</button>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

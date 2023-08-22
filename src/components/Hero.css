@@ -1,46 +1,50 @@
+
+* { 
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero {
-    background-color: #ffffff;
-    padding: 1px 0;
-  }
-  
+  background-color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  .Headign {
-    color: #0B132A !important ;
-    font-family: Rubik !important;
-    font-size: 50px !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    line-height: 70px !important; /* 140% */
-  }
+.Heading {
+  color: #0B132A !important;
+  font-family: Rubik !important;
+  font-size: 50px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 70px !important;
+  max-width: 100%;
+}
 
-  .Parag{
-    font-size: 16px !important;
-    color: #4F5665;
-  }
-  .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 120px;
-    max-width: 1100px;
-    
-  }
-  
-  .hero-text {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .hero-text p {
-    font-size: 1.1rem;
-    color: #707070;
-    margin-bottom: 30px;
-  }
-  
-  .hero-text button {
-    width: 250px;
+.Parag {
+  font-size: 16px !important;
+  color: #4F5665;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Default mobile layout */
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  margin-bottom: 0px;
+  min-width: 50%;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #707070;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  width: 250px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -51,62 +55,112 @@
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
-  }
+}
 
-  .hero-text button:hover {
-    background-color: #e63b4d; /* Slightly darker shade when hovered */
-    box-shadow: 0px 30px 50px 0px #ffaab7;
-  }
-  
-  .hero-image img {
-    margin-top: 50px;
-    margin-left: 30px;
-    max-width: 80%;
-    height: auto;
-  }
+.hero-text button:hover {
+  background-color: #e63b4d;
+  box-shadow: 0px 30px 50px 0px #ffaab7;
+}
+
+.hero-image img {
+  max-width: 90%;
+}
 
 .hero-banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 1140px; /* Set the width */
-  height:200px; /* Set the height */
-  margin: 0 auto; /* Center the banner */
+  width: 100%; /* Full width for responsiveness */
+  margin: 0 auto;
   border-radius: 10px;
-  background: #FFF;
-  margin-top: 30px; /* Add some margin */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow below */
-  }
-  
-  .banner-item {
-    display: flex;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add some padding */
+}
+
+.banner-item {
+  display: flex;
   align-items: center;
-  padding: 0 15px; /* Add padding to the banner items */
-  color: black;
-  flex-shrink: 0; /* Prevent icon overflow */
-  /* ... rest of your styles ... */
-  }
-  
-  .banner-item img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-left:  90px;
-  }
-  
-  .topText{
-    color: #0B132A;
-font-family: Rubik;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: 5px; /* 120% */
+  padding: 0 15px;
+
+  flex-shrink: 0;
+}
+
+.banner-item img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+}
+
+.topText {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+.bottomText {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+}
+
+.icon-text p {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 100px;
+  background-color: #EEEFF2;
+  margin: 0 20px;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1200px;
+    margin-top: 10px;
   }
 
-  .icon-text p {
-    font-size: 14px;
-    margin-right: 90px;
+  .hero-text {
+    flex: 1;
     text-align: left;
+    margin-right: 20px;
   }
-  
+
+  .hero-image img {
+    margin-top: 63px;
+    margin-bottom: 0;
+  }
+
+  .hero-banner {
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  .banner-item img {
+    margin-left: 30px;
+  }
+
+  .topText {
+    font-size: 30px;
+    line-height: 0px;
+  }
+
+  .bottomText {
+    font-size: 22px;
+    line-height: 0px;
+  }
+}
