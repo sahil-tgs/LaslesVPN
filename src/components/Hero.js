@@ -8,8 +8,7 @@ const Hero = () => {
         <div className="hero-text">
           <p className="Heading">Want anything to be easy with <b>LaslesVPN.</b></p>
           <p className="Parag">
-            Provide a network for all your needs with ease and fun using <b>LaslesVPN.</b>
-            Discover interesting features from us.
+            Provide a network for all your needs with ease and fun using <b>LaslesVPN.</b> Discover interesting features from us.
           </p>
           <button>Get Started</button>
         </div>

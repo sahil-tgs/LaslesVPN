@@ -17,14 +17,14 @@
 }
 
 .logo {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .logo-text {
   color: #0B132A !important;
 font-family: Rubik !important;
-font-size: 20px !important;
+font-size: 18px !important;
 font-style: normal !important;
 font-weight: 500 !important;
 line-height: normal !important;
@@ -48,7 +48,7 @@ line-height: normal !important;
 .nav-links a {
   color: var(--grey-1, #4F5665);
 font-family: Rubik ;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -64,7 +64,7 @@ line-height: normal;
   margin-right: 15px;
   color: #0B132A;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -79,6 +79,7 @@ line-height: normal;
   border-radius: 50px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
 }
 
