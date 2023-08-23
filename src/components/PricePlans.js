@@ -20,7 +20,7 @@ const PricePlans = () => {
             <li>No Trafic Logs</li>
             <li>Works on All Devices</li>
           </ul>
-          <p className="bold-text">Free</p>
+          <p className="bold-text"><b>Free</b></p>
           <button className="outline-button">Get Started</button>
         </div>
         <div className="plan-card">
@@ -36,7 +36,7 @@ const PricePlans = () => {
             <li>Connect Anywhere</li>
 
           </ul>
-          <p className="bold-text">₹80/mo</p>
+          <p className="bold-text"><b>₹80</b>/mo</p>
           <button className="outline-button">Get Started</button>
         </div>
         <div className="plan-card">
@@ -52,7 +52,7 @@ const PricePlans = () => {
             <li>Connect Anywhere</li>
             <li>Get New Features</li>
           </ul>
-          <p className="bold-text">₹160/mo</p>
+          <p className="bold-text"><b>₹160</b>/mo</p>
           <button className="outline-button">Get Started</button>
         </div>
       </div>

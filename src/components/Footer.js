@@ -23,14 +23,14 @@ const Footer = () => {
                 <span className="logo-text">LaslesVPN</span>
               </div>
               <p className="logo-description">
-                LaslesVPN is a private virtual network that has unique features and has high security.
+                <b>LaslesVPN</b> is a private virtual network that has unique features and has high security.
               </p>
               <div className="social-icons">
-                <a href="#"><img src="/Facebook.svg" alt="Facebook" /></a>
-                <a href="#"><img src="/Twitter.svg" alt="Twitter" /></a>
-                <a href="#"><img src="/Instagram.svg" alt="Instagram" /></a>
+                <a href="/image"><img src="/Facebook.svg" alt="Facebook" /></a>
+                <a href="/image"><img src="/Twitter.svg" alt="Twitter" /></a>
+                <a href="/image"><img src="/Instagram.svg" alt="Instagram" /></a>
               </div>
-              <p className="copyright">@2020 LaslesVPN</p>
+              <p className="copyright">@2020 <b>LaslesVPN</b></p>
             </div>
             <div className="right-bottom-section">
               <div className="footer-column">

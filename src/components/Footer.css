@@ -29,19 +29,34 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .overlay-text {
   flex: 1;
   text-align: left;
+  margin-right: 20%;
+  padding-right: 30px;
+}
+
+.overlay-text h2{
+  margin-bottom: 20px;
+  max-width: 80%;
 }
 
 .subscribe-button {
-  width: 250px;
-  height: 60px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  width: 200px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: var(--primary, #F53855);
+  background: var(--primary, #F53838);
   box-sizing: border-box;
   color: white;
   border: none;
@@ -50,7 +65,8 @@
 }
 
 .subscribe-button:hover {
-  background-color: #E2334C;
+  background-color: #F53838;
+  box-shadow: 0px 30px 50px 0px #e57585;
 }
 
 /* Bottom Section */
@@ -60,8 +76,11 @@
 }
 
 .transparent-container {
+
   background-color: #F8F8F8;
-  margin: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 12%;
 }
 
 .bottom-content {
@@ -73,17 +92,21 @@
 
 /* Left Bottom Section */
 .left-bottom-section {
-  width: 60%;
+  width: 38%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-right: 50px;
 }
-
+.logo-container{
+  display: flex;
+  align-items: center;
+}
 .company-logo {
-  width: 50px;
-  height: 50px;
+  
+  width: 30px;
+  height: auto;
 }
 
 .logo-text {
@@ -94,8 +117,12 @@
 }
 
 .logo-description {
-  margin-top: 10px;
-  font-size: 14px;
+  color: #4F5665;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
 }
 
 .social-icons {
@@ -105,13 +132,8 @@
 .social-icons a {
   margin-right: 10px;
   display: inline-block;
-  color: white;
   text-decoration: none;
   transition: opacity 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-  opacity: 0.7;
 }
 
 /* Copyright Text */
@@ -126,6 +148,7 @@
   display: flex;
   justify-content: space-between;
   width: 40%;
+
 }
 
 .footer-column {
@@ -135,6 +158,12 @@
 .footer-column h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .footer-column ul {
@@ -146,13 +175,22 @@
   margin-bottom: 5px;
   font-size: 14px;
   cursor: pointer;
+  color: #4F5665;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 /* Copyright Text */
 .copyright {  
-  margin-top: 20px;
-  font-size: 12px;
-  text-align: center;
+  color: #AFB5C0;
+text-align: center;
+font-family: Rubik;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
 }
 
 /* Clearfix */

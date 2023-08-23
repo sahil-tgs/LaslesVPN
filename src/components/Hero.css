@@ -43,8 +43,8 @@
 
 
 .hero-text button {
-  width: 250px;
-  height: 60px;
+  width: 220px;
+  height: 55px;
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--primary, #f53855);

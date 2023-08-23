@@ -38,7 +38,7 @@
     text-align: center;
     margin: 0 10px 20px; /* Add margin for spacing between cards */
     transition: border-color 0.3s; /* Add transition for color change on hover */
-    border: 3px solid #dddddd; /* Set default border width */
+    border: 2px solid #dddddd; /* Set default border width */
     border-color: #dddddd; /* Set default border color */
     
   }
@@ -53,8 +53,13 @@
   }
   
   .plan-card h3 {
-    font-size: 1.5rem;
-    margin-top: 20px;
+    color: #0B132A;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
   }
   
   .plan-card ul {
@@ -70,6 +75,12 @@
 .plan-card ul li {
     position: relative;
     padding-left: 30px; /* Add space for the custom bullet */
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
   }
   
   .plan-card ul li::before {
@@ -87,9 +98,20 @@
   
   
   .bold-text {
-    font-weight: bold;
-    margin-top: 50px;
+    
+    color: #4F5665;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
   }
+
+  .bold-text b{
+    color: #0B132A;
+  }
+
   
   .outline-button {
     width: 100%;
