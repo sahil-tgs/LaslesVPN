@@ -1,124 +1,84 @@
+/* TestimonialSection.css */
+
 .testimonial-carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .carousel-content {
-    display: flex;
-    width: var(--total-slides, 1) * 100%; /* Adjust total width */
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .testimonial-card {
-    flex: 0 0 var(--per-slide, 15%); /* Adjust card width */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 30px;
-    text-align: left;
-  }
-  
-  .testimonial-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
 
-  .user-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-  }
+.carousel-content {
+  display: flex;
+  width: var(--total-slides, 1) * 100%;
+  transition: transform 0.5s ease-in-out;
+}
 
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-  }
-  
-  .user-name {
-    font-weight: bold;
-    margin-bottom: 2px;
-  }
-  
-  .user-location {
-    color: #888;
-    font-size: 14px;
-  }
+.testimonial-card {
+  flex: 0 0 var(--per-slide, 15%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 30px;
+  text-align: left;
+}
 
-  .testimonial-text {
-    font-style: italic;
-  }
+/* Rest of your CSS styles for .testimonial-card */
 
-  .testimonial-card h3 {
-    margin-top: 0;
-  }
-  
-  .testimonial-card p {
-    margin-bottom: 0;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s ease-in-out;
-    padding: 10px;
-  }
-  
-  .carousel-button:hover {
-    color: #555;
-  }
-  
-  .carousel-button.prev {
-    left: 0;
-  }
-  
-  .carousel-button.next {
-    right: 0;
-  }
-  
-  .testimonial-heading {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-caption {
-    text-align: center;
-    color: #888;
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
+.carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align buttons to the right */
+  width: 100%; /* Make the button container full width */
+  padding-right: 10px; /* Add some spacing from the right */
+  margin-top: 10px; /* Adjust the distance from the top */
+}
 
-  .carousel-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .pagination-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .pagination-dot.active {
-    background-color: #333;
-  }
+.carousel-button.prev,
+.carousel-button.next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #f53855;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 5px; /* Adjust spacing between buttons */
+}
+
+.carousel-button.prev:hover,
+.carousel-button.next:hover {
+  background-color: #f53855; /* Button background color on hover */
+}
+.carousel-button.next{
+  margin-right: 8%;
+}
+.carousel-pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px; /* Adjust the distance from the left */
+  margin-right: 1000px; /* Adjust the distance from the right */
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination-dot.active {
+  background-color: #f53855;
+}
+
+/* Rest of your CSS styles */

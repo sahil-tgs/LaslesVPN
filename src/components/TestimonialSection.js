@@ -78,53 +78,50 @@ const TestimonialSection = () => {
 
   return (
     <div className="testimonial-section">
-      <h2 className="testimonial-heading">
-        Trusted by Thousands of Happy Customers
-      </h2>
-  
-      <p className="testimonial-caption">
-        These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
-      </p>
-  
-      <div className="testimonial-carousel">
-        <div
-          ref={slideContentRef}
-          className="carousel-content"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-        >
-          {testimonialData.map(testimonial => (
-            <div key={testimonial.id} className="testimonial-card">
-              <div className="testimonial-header">
-                <img src={testimonial.userIcon} alt="User Icon" className="user-icon" />
-                <div className="user-info">
-                  <span className="user-name">{testimonial.name}</span>
-                  <span className="user-location">{testimonial.location}</span>
-                </div>
+    <h2 className="testimonial-heading">
+      Trusted by Thousands of Happy Customers
+    </h2>
+    <p className="testimonial-caption">
+      These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+    </p>
+    <div className="testimonial-carousel">
+      <div
+        ref={slideContentRef}
+        className="carousel-content"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        {testimonialData.map(testimonial => (
+          <div key={testimonial.id} className="testimonial-card">
+            <div className="testimonial-header">
+              <img src={testimonial.userIcon} alt="User Icon" className="user-icon" />
+              <div className="user-info">
+                <span className="user-name">{testimonial.name}</span>
+                <span className="user-location">{testimonial.location}</span>
               </div>
-              <p className="testimonial-text">{testimonial.testimonial}</p>
             </div>
-          ))}
-        </div>
-        
-        <button className="carousel-button prev" onClick={handlePrevSlide}>
-          &#8249;
-        </button>
-
-        <button className="carousel-button next" onClick={handleNextSlide}>
-          &#8250;
-        </button>
-
+            <p className="testimonial-text">{testimonial.testimonial}</p>
+          </div>
+        ))}
       </div>
-      <div className="carousel-pagination">
-          {Array.from({ length: totalSlides }, (_, index) => (
-            <div
-              key={index}
-              className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(index)}
-            ></div>
-          ))}
-        </div>
     </div>
+    <div className="carousel-pagination">
+      {Array.from({ length: totalSlides }, (_, index) => (
+        <div
+          key={index}
+          className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
+          onClick={() => setCurrentSlide(index)}
+        ></div>
+      ))}
+    </div>
+    <div className="carousel-buttons">
+      <button className="carousel-button prev" onClick={handlePrevSlide}>
+        &#8249;
+      </button>
+      <button className="carousel-button next" onClick={handleNextSlide}>
+        &#8250;
+      </button>
+    </div>
+  </div>
   );
   
 };
